@@ -1,7 +1,7 @@
 /* 完全オリジナル問題。実試験問題・市販問題の転載禁止。 */
-const S='https://guga.or.jp/assets/syllabus.pdf';
+const S='https://guga.or.jp/assets/syllabus_202610.pdf';
 const SOURCES={
- syllabus:{title:'GUGA 生成AIパスポート試験シラバス（2026年2月以降）',url:S},
+ syllabus:{title:'GUGA 生成AIパスポート試験シラバス（2026年2月〜10月試験）',url:S},
  outline:{title:'GUGA 試験概要',url:'https://guga.or.jp/outline/'},
  aiLaw:{title:'内閣府 AI法',url:'https://www8.cao.go.jp/cstp/ai/ai_act/ai_act.html'},
  copyright:{title:'文化庁 AIと著作権',url:'https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html'},
@@ -122,4 +122,4 @@ q(C.TREND,'MCPを使った外部連携について、適切なものをすべて
 ,q(C.TREND,'ボイスコンバージョン（音声変換）の説明として、最も適切なものはどれか。',['話している言葉は保ちながら、話者の声の特徴を別の声へ変換する技術','人の発話を自動認識し、会議の発言内容を検索可能な文字データへ書き起こす技術','文章の指示から、複数の楽器で構成された新しい楽曲を作る技術','録音音声に合わせ、映像内の人物の口の動きを合成する技術'],0,'ボイスコンバージョンは、言語内容を保ちながら話者性を変換する技術です。韻律は変換対象になる場合もあるため、「韻律を常に保つ」とは限りません。','voiceConversion')
 ,q(C.TREND,'Google DeepMindのVeo 3について、公式モデルカードに合う説明はどれか。',['テキストや画像を入力し、映像と音声を含む動画を生成できる潜在拡散モデルである','映像だけを生成する方式なので、効果音や会話は必ず別の編集ツールで後付けする','静止画は入力できず、テキストだけを使って低解像度の短い動画を生成する','既存動画から人物を検出し、顔のぼかしと匿名化処理だけを自動で行う専用の編集ツールである'],0,'Veo 3の公式モデルカードは、入力を自然言語のテキストと画像、出力を音声付きの高品質・高解像度動画、アーキテクチャを潜在拡散と説明しています。製品仕様は変化しやすいため、定期的な再確認が必要です。','veo3')
 ];
-Object.freeze(QUESTIONS);
+/* QUESTIONS の凍結は、questions_hard.js の追加後に app.js の冒頭で行う。 */
