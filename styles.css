@@ -21,3 +21,11 @@ button{font:inherit}.topbar{padding:calc(env(safe-area-inset-top) + 22px) 20px 2
 .paused-card h2{margin:10px 0 14px}.paused-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 12px}.paused-stats .stat strong{font-size:24px}
 .resume-card{border:2px solid #f4b740;background:#fffaf0}.resume-card h2{font-size:18px;margin:0 0 4px}
 .ghost.danger{color:var(--bad);border-color:#f3c4c4}
+.mock-nav{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;margin-top:12px}.mock-nav .ghost,.mock-nav .primary{margin-top:0;padding:13px 6px}.mock-nav button:disabled{opacity:.4}
+.flag-btn.on{background:#fff4e5;border-color:#f4b740;color:#b45309}
+.mock-status{font-size:13px;color:var(--muted);margin:10px 2px 0}.mock-status.ok{color:var(--good)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:2px 0 8px}.legend span{display:flex;align-items:center;gap:6px}.dot{width:12px;height:12px;border-radius:4px;border:1.5px solid var(--line);background:#fff;display:inline-block}.dot.ans{background:#dff3ff;border-color:var(--blue)}.dot.flag{background:#fff4e5;border-color:#f4b740}
+.qgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin:12px 0 6px}.qnum{position:relative;border:1.5px solid var(--line);background:#fff;border-radius:11px;padding:10px 0;font-weight:700;color:var(--muted)}.qnum.ans{background:#dff3ff;border-color:var(--blue);color:var(--navy)}.qnum.flag::after{content:'★';position:absolute;top:-7px;right:-4px;font-size:12px;color:#d97706}.qnum.flag{border-color:#f4b740}.qnum.current{outline:2px solid var(--navy);outline-offset:1px}
+.result-list{display:grid;gap:6px;margin-top:8px}.result-row{display:grid;grid-template-columns:30px 26px 1fr;align-items:center;gap:6px;text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px;font-size:13px;line-height:1.45}.result-row b{color:var(--muted)}.result-row .mark{font-weight:800}.result-row.ok .mark{color:var(--good)}.result-row.ng .mark{color:var(--bad)}.result-row .stem{color:var(--ink)}
+@media (min-width:1024px){.qgrid{grid-template-columns:repeat(10,1fr)}.result-list{grid-template-columns:1fr 1fr}}
+.question-head{flex-wrap:wrap;gap:6px 8px}.tag,.counter{white-space:nowrap}.mock-card .counter{margin-left:auto}
